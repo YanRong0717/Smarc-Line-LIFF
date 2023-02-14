@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Jumbo">
+
+    <meta property="og:description" content="運動資料管理">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" href="../css/measure.css">
+    <link href="../css/font_Noto_Sans_TC.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">
+    <link rel="Shortcut Icon" type="image/x-icon" href="../img/logo.ico">
+    <title>SMARC</title>
+</head>
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/measure.js"></script>
+<script src="../js/sweetalert2@9.js"></script>
+<script src="../js/sweetalert2.all.min.js"></script>
+<script type="text/javascript" src="../js/font.js"></script>
+
+<body>
+    <div class="main-nav">
+        <div class="menu">
+            <a href="../home/index.html"><i class="fas fa-home"></i>
+                <p>首頁</p>
+            </a>
+            <a href="../evaluation/index.html"><i class="fas fa-chart-bar"></i>
+                <p>評估</p>
+            </a>
+            <a href="../everyday/index.html"><i class="fas fa-lightbulb"></i>
+                <p>每日</p>
+            </a>
+            <a href="../measure/index.html"><i class="fas fa-heartbeat"></i>
+                <p>紀錄</p>
+            </a>
+            <a href="../calendar/index.html"><i class="fas fa-calendar-alt"></i>
+                <p>簽到</p>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="wrap">
+        <div class="item">
+            <div class="pic">
+                <img src="../img/blood_pressure.png">
+            </div>
+            <div class="txt">
+                <p>血壓</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="../img/blood_sugar.png">
+            </div>
+            <div class="txt">
+                <p>血糖</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="../img/body_temp.png">
+            </div>
+            <div class="txt">
+                <p>體溫</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="../img/height.png">
+            </div>
+            <div class="txt">
+                <p>身高</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="../img/weight.png">
+            </div>
+            <div class="txt">
+                <p>體重</p>
+            </div>
+        </div>
+    </div>
+    <div class="measure_data">
+        <div class="blood_pressure">
+            <h4>收縮壓 ( mmHg )</h4>
+            <input type="number" max="250" min="0" pattern="[0-9]"><br>
+            <h4>舒張壓 ( mmHg )</h4>
+            <input type="number" max="250" min="0" pattern="[0-9]"><br>
+            <h4>心跳 ( 次/分鐘 )</h4>
+            <input type="number" max="250" min="0" pattern="[0-9]"><br>
+        </div>
+        <div class="blood_glucose">
+            <h4>飯前血糖 ( mmol/L )</h4>
+            <input type="number" max="250" min="0" pattern="[0-9]"><br>
+            <h4>飯後血糖 ( mmol/L )</h4>
+            <input type="number" max="250" min="0" pattern="[0-9]"><br>
+        </div>
+        <div class="body_temp">
+            <h4>體溫 ( °C )</h4>
+            <input type="number" max="50" min="30" pattern="[0-9]"><br>
+        </div>
+        <div class="height">
+            <h4>身高 ( cm )</h4>
+            <input type="number" max="250" min="30" pattern="[0-9]"><br>
+        </div>
+        <div class="weight">
+            <h4>體重 ( kg )</h4>
+            <input type="number" max="250" min="30" pattern="[0-9]"><br>
+        </div>
+        <input type="button" value="提交" id="measure_btn">
+        <br><br><br><br>
+    </div>
+
+</body>
+
+</html>

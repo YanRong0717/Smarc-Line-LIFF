@@ -1,0 +1,41 @@
+{
+    "type": "flex",
+    "altText": "查看運動資料",
+    "contents": {
+        "type": "bubble",
+        "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "text",
+                    "text": "亞健康促進中心",
+                    "weight": "bold",
+                    "size": "lg",
+                    "margin": "md",
+                    "align": "center"
+                },
+                {
+                    "type": "separator",
+                    "margin": "md"
+                },
+                {
+                    "type": "button",
+                    "action": {
+                        "type": "uri",
+                        "label": "查看資料",
+                        "uri": "https://liff.line.me/123456789"
+                    },
+                    "style": "primary",
+                    "margin": "md"
+                }
+            ]
+        },
+        "size": "kilo",
+        "styles": {
+            "footer": {
+                "separator": true
+            }
+        }
+    }
+}

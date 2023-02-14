@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+    background-image: url("../img/bgc.png");
+    -webkit-text-size-adjust: 100% !important;
+}
+
+input {
+    -webkit-appearance: none;  /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
+    -moz-appearance: none;     /* FireFox */
+    appearance: none;
+}
+
+.wrap{
+    width: 100vw;
+    background-image: url("../img/bgc.png");
+    display: flex;
+    overflow: scroll;
+    border-bottom: 3px solid #aaa;
+    position: fixed;
+	top: 0;
+	z-index: 99;
+}
+
+.item{
+    margin: 5px;
+    position: relative;
+}
+
+.item .pic{
+    -webkit-filter:brightness(.5);
+}
+
+.item .pic img {
+    width: 25vw;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.item .txt{
+    text-align: center;
+    font-weight: 600;
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    color: #FFF;
+}
+
+.measure_data{
+    position: relative;
+    top: 90px;
+    overflow-y: scroll;
+}
+
+
+.blood_pressure,.blood_glucose,.body_temp,.height,.weight{
+    margin: 10px;
+}
+h4{
+    color: #fff;
+    font-weight: 500;
+    margin: 0 10px;
+}
+input[type=number]{
+    width: 95%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 10px;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+input[type=number]:focus{
+    border-color: dodgerblue;
+    box-shadow: 0 0 8px 0 dodgerblue;
+}
+
+#measure_btn{
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 50px;
+    font-size: 0.889rem;
+    font-weight: 800;
+    border-radius: 10px;
+    justify-items: end;
+    transition: .3s;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: #1abc9c;
+}

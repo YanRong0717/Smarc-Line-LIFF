@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.fas{
+	color: rgba(255, 255, 255,0.87);
+	font-size: 1rem;
+}
+
+.not-active { /* disabled href on loading*/
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	color: #1F1F1F;
+}
+
+
+.main-nav{
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	z-index: 99;
+}
+
+.main-nav .menu{
+	display: flex;
+	margin: auto;
+	position: relative;
+	justify-content: space-around;
+	background-color: #1F1F1F;
+	border-top: 3px solid #4c4c4c;
+}
+.main-nav .menu a{
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 15px;
+	line-height: 20px;	
+	cursor: pointer;
+}
+
+.main-nav .menu p{
+	color: rgba(255, 255, 255,0.87);
+}

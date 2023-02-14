@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="SMARC">
+
+    <meta property="og:description" content="運動資料管理">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>SMARC</title>
+    <link rel="stylesheet" href="../css/calendar.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="Shortcut Icon" type="image/x-icon" href="../img/logo.ico">
+</head>
+
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../js/sweetalert2@9.js"></script>
+<script type="text/javascript" src="../js/sweetalert2.all.min.js"></script>
+
+<body>
+    <div class="main-nav">
+        <div class="menu">
+            <a href="../home/index.html"><i class="fas fa-home"></i>
+                <p>首頁</p>
+            </a>
+            <a href="../evaluation/index.html"><i class="fas fa-chart-bar"></i>
+                <p>評估</p>
+            </a>
+            <a href="../everyday/index.html"><i class="fas fa-lightbulb"></i>
+                <p>每日</p>
+            </a>
+            <a href="../measure/index.html"><i class="fas fa-heartbeat"></i>
+                <p>紀錄</p>
+            </a>
+            <a href="../calendar/index.html"><i class="fas fa-calendar-alt"></i>
+                <p>簽到</p>
+            </a>
+        </div>
+    </div>
+    <div class="calendar-wrap">
+        <div>
+            <h2 class="title"></h2>
+            <table class="calendar">
+                <thead>
+                    <tr>
+                        <th class="day-title" scope="col"></th>
+                        <th class="day-title" scope="col"></th>
+                        <th class="day-title" scope="col"></th>
+                        <th class="day-title" scope="col"></th>
+                        <th class="day-title" scope="col"></th>
+                        <th class="day-title" scope="col"></th>
+                        <th class="day-title" scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="info">
+        <div class="times">
+            <p><i class="fas fa-running"></i> &nbsp;&nbsp;運動次數</p>
+            <h3></h3>
+        </div>
+        <div class="time">
+            <p><i class="fas fa-clock"></i> &nbsp;&nbsp;運動時間</p>
+            <h3></h3>
+        </div>
+    </div>
+</body>
+<script src="../js/calendar.js"></script>
+
+</html>

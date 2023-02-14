@@ -1,0 +1,50 @@
+{
+    "type": "flex",
+    "altText": "歡迎加入會員",
+    "contents": {
+        "type": "bubble",
+        "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "text",
+                    "text": "亞健康促進中心",
+                    "weight": "bold",
+                    "size": "xl",
+                    "margin": "md",
+                },
+                {
+                    "type": "text",
+                    "text": "朝陽科大工管系",
+                    "size": "xs",
+                    "color": "#aaaaaa",
+                    "wrap": true
+                },
+                {
+                    "type": "box",
+                    "layout": "vertical",
+                    "margin": "none",
+                    "spacing": "xs",
+                    "contents": [
+                        {
+                            "type": "button",
+                            "action": {
+                                "type": "uri",
+                                "label": "加入會員",
+                                "uri": "https://line.me/R/ti/p/123456789"
+                            },
+                            "style": "primary",
+                            "margin": "xl"
+                        }
+                    ]
+                }
+            ]
+        },
+        "styles": {
+            "footer": {
+                "separator": true
+            }
+        }
+    }
+}

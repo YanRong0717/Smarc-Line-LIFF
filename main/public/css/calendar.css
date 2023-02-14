@@ -1,0 +1,148 @@
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  color: #37474f;
+  -ms-overflow-style: none;
+	overflow-y :auto;
+	background-image: url("../img/bgc.png");
+  -webkit-text-size-adjust: 100% !important;
+}
+
+.week{
+  pointer-events: none;
+}
+.note {
+  font-size: calc(0.5vw + 0.75rem);
+  text-align: center;
+  opacity: 0.5;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.7778rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+  background-color: #37474F;
+  border-radius: 1.5em;
+  cursor: pointer;
+}
+
+.calendar-wrap {
+  padding: 15px;
+  margin: 10px 15px 0px;
+  font-size: 0.7222rem;
+  background-color: #cfd8dc;
+  border-radius: 1.5em;
+  user-select: none;
+  box-shadow: 0 0.0625em 0.25em rgb(0 20 50 / 20%), 
+  0 0.5em 0.5em 0.125em rgb(0 20 50 / 10%);
+}
+
+/* @media (min-width: 500px) {
+  .calendar-wrap {
+    width: 450px;
+    font-size: 1.25rem;
+  }
+} */
+
+.title {
+  margin-bottom: 0.2em;
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.calendar {
+  table-layout: fixed;
+  width: 100%;
+  overflow: hidden;
+  border-collapse: collapse;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.day-title {
+  width: 1em;
+  height: 1.5em;
+  vertical-align: top;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.0625em;
+  box-shadow:
+    inset 0 -0.7em #cfd8dc,
+    inset 0 -1em rgba(0,20,50,0.1);
+}
+
+.day {
+  position: relative;
+  height: 3em;
+}
+
+
+.day-number {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5em;
+  width: 2.5em;
+  font-weight: bold;
+  border-radius: 50%;
+  border:2px dashed #fff;
+  margin: 3px;
+}
+.day.prev-mon .day-number,
+.day.next-mon .day-number {
+  color: rgba(0,0,0,0.3);
+}
+
+.day.today span.day-number {
+  color: #fff;
+  border: 0.1em solid transparent;
+  box-shadow: inset 0 0 0 2em #1abc9c;
+}
+
+.calendar-wrap .reset {
+  display: block;
+  
+}
+
+
+
+/* ---------------------------- */
+
+
+.info {
+  display:flex;
+  margin: 15px 20px 80px;
+  justify-content:space-around;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: rgb(202, 198, 198);
+  height: 80px;
+}
+
+.info .times , .info .time {
+  padding:10px;
+  border:3px solid #fff;
+  border-radius: 20px;
+  background-color: #1abc9c;
+  color: #fff;
+  
+}
+.info .times h3, .info .time h3{
+  font-size:1.111rem;
+  color: #fff;
+}
+.info .times i, .info .time i{
+  font-size:28px;
+}
+.info i{
+  color: #fff;
+}
