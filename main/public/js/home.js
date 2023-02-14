@@ -842,7 +842,7 @@ function share() {
                                             "action": {
                                                 "type": "uri",
                                                 "label": "加入會員",
-                                                "uri": "https://line.me/R/ti/p/%40753fnvab"
+                                                "uri": "https://line.me/R/ti/p/123456789"
                                             },
                                             "style": "primary",
                                             "margin": "xl"
@@ -933,7 +933,7 @@ function look_data() {
                                     "action": {
                                         "type": "uri",
                                         "label": "查看資料",
-                                        "uri": "https://liff.line.me/1656004436-lmAZdrx2"
+                                        "uri": "https://liff.line.me/123456789"
                                     },
                                     "style": "primary",
                                     "margin": "md"
